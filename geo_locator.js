@@ -115,15 +115,11 @@
         var firstTime, url;
         url = "";
         firstTime = true;
-        _.each(params, function(k, v) {
-          if (v != null) {
-            url += firstTime != null ? firstTime : {
-              '?': '&'
-            };
+        _.each(params, function (v, k) {
+          if (v) {
+            url += (firstTime ? '?' : '&');
             firstTime = false;
-            return url += "" + k + "=" + (v != null ? {
-              v: ''
-            } : void 0);
+            url += "" + k + "=" + (v === null ? '' : v);
           }
         });
         return url;
