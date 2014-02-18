@@ -1,7 +1,7 @@
 (function() {
   var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  define(["jquery"], function($) {
+  define(["jquery", "underscore"], function($, _) {
     return window.GeoLocator = (function() {
 
       function GeoLocator() {

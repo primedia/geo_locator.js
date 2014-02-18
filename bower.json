@@ -1,0 +1,12 @@
+{
+  "name": "geo_locator",
+  "version": "0.1.0",
+  "main": "geo_locator.js",
+  "dependencies": {
+    "jquery": null,
+    "underscore": null
+  },
+  "ignore": [
+    "package.json"
+  ]
+}
